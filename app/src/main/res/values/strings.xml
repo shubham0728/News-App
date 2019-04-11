@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="api_key">77ca2669ae20489ba160944b5db56468</string>
+    <string name="no_netowrk">No Network. Please check connection.</string>
+    <string name="error">Error : Something went wrong</string>
+    <string name="nothing">Nothing to show</string>
+</resources>

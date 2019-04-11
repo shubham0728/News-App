@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding"
+    android:orientation="vertical"
+    android:padding="@dimen/padding">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_half"
+        app:cardBackgroundColor="@color/grey"
+        card_view:cardElevation="@dimen/elevation">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/image_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ProgressBar
+                            android:id="@+id/progress_news"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="@dimen/activity_margin"
+                            android:layout_height="@dimen/activity_margin"
+                            android:layout_centerInParent="true"
+                            android:theme="@style/Progress" />
+
+                        <ImageView
+                            android:id="@+id/img_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="center" />
+
+
+                        <TextView
+                            android:id="@+id/txt_source"
+                            style="@style/TextAppearance.AppCompat.Title.Inverse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/transparent_bg_dark"
+                            android:fontFamily="@font/raleway"
+                            android:padding="@dimen/padding"
+                            android:textSize="@dimen/elevation"
+                            android:textStyle="bold" />
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_top">
+
+                        <TextView
+                            android:id="@+id/txt_news_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_margin_half"
+                            android:fontFamily="@font/raleway"
+                            android:maxLines="2"
+                            android:textSize="@dimen/textsize_small"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_news_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_news_title"
+                            android:layout_marginLeft="@dimen/activity_margin_half"
+                            android:fontFamily="@font/raleway"
+                            android:maxLines="1"
+                            android:textSize="@dimen/elevation"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
